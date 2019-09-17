@@ -32,6 +32,22 @@ export class RecipeDetailPage implements OnInit {
     });
   }
 
+  ionViewWillEnter() {
+    console.log('ionViewWillEnter');
+  }
+
+  ionViewDidEnter() {
+    console.log('ionViewDidEnter');
+  }
+
+  ionViewWillLeave() {
+    console.log('ionViewWillLeave');
+  }
+
+  ionViewDidLeave() {
+    console.log('ionViewDidLeave');
+  }
+
   onDeleteRecipe() {
     this.alertCtrl
       .create({
